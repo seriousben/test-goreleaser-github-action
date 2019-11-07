@@ -5,9 +5,13 @@ before:
 builds:
 - env:
   - CGO_ENABLED=0
+  id: hello-world
+  binary: hello-world
   main: ./cmd/hello-world/main.go
 - env:
   - CGO_ENABLED=0
+  id: bin2
+  binary: bin2
   main: ./cmd/bin2/main.go
 archives:
 - replacements:
